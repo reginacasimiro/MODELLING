@@ -1,0 +1,16 @@
+Content of folder Pressure-Driven & Background Leakages for WDNs
+
+
+1) FAQ_BBLAWN_31012014.pdf: frequently asked questions from "Questions & Answer" webpage (last access 31 January 2014)
+
+2) Report_Simulation_Model_WDN.pdf:  explanantion on background leakage and hydraulic pressure deficient conditions modelling
+
+3) Matlab script files: 
+3.1) go.m : script to launch WDN simulation
+3.2) WDN_simulation.m : script to set up the steady-state simulation of a WDN using "Simulation_Model_WDN.m"
+3.3) Simulation_Model_WDN.m : function to execute the steady-state simulation of a water distribution network (WDN)
+
+4) Matlab data files:
+4.1) C-TOWN.mat: data of example network
+4.2) Results_C-TOWN.mat: result data on example network
+4.3) MyColormaps.mat: supporting data for visualization of results
