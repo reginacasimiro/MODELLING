@@ -1,0 +1,41 @@
+---
+title: "EPANET"
+author: "Regina_Casimiro"
+date: "31 de Outubro de 2016"
+output: html_document
+---
+
+
+
+
+```{r}
+#pattern<-read.table("pattern.txt", sep=",")
+#demand<-read.table("demand.txt", sep=",")
+#idsig_idmeter<-read.csv("correspond_idsig_idmeter.csv", sep=";")
+
+
+
+```
+
+
+
+```{r}
+# Find out number of links within specific Age
+
+Status<-read.table("clipboard", header = TRUE)
+
+Alternativa<- read.table(file = "clipboard", header=TRUE)
+
+
+cut(Alternativa, breaks=c(50, 100, 150), include.lowest=TRUE)
+
+Alternativa$age_cut <- cut(Alternativa$Age_hours,breaks = c(-Inf, 50, 100, 150, Inf), labels = c("less or equal than 50 hours", "50-100 hours", "100-150 hours", "more than 150 hours"), include.lowest = TRUE)
+
+table(Alternativa$age_cut)
+
+
+
+
+
+```
+
